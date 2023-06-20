@@ -24,7 +24,7 @@ member_casual string
 
 create or replace stage citybikes_trip
 url='s3://mahcitybike/'
-credentials=(aws_key_id='AKIA6PJRK6SNZATCH76F' aws_secret_key='trYznLbhSt4oj2kSj1ZmRws++K8CQU2pNzAAIONn');
+credentials=(aws_key_id='SNZATCH76F' aws_secret_key='ZmRws++K8CQU2pNzAAIONn');
     
 list @citybikes_trip; 
 
