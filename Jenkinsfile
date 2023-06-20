@@ -7,6 +7,9 @@ pipeline {
                 echo 'Building..'
             }
         }
+        stage(Test)
+        {
+            
          parallel{
 
                 stage('TestA') {
@@ -21,7 +24,8 @@ pipeline {
                 }
 
             }
-        stage('Deploy') {
+        }
+            stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
